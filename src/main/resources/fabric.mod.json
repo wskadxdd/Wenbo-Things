@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "wbthings",
+	"version": "${version}",
+	"name": "Wenbo Things",
+	"description": "Made with Bideng Studio",
+	"authors": [
+		"wskadxdd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wbthings/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.bideng.WenboThings"
+		],
+		"client": [
+			"org.bideng.WenboThingsClient"
+		]
+	},
+	"mixins": [
+		"wbthings.mixins.json",
+		{
+			"config": "wbthings.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

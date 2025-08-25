@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "wbthings:block/classroom_chair", "uvlock": false },
+    "facing=east":  { "model": "wbthings:block/classroom_chair", "y":  90, "uvlock": false },
+    "facing=south": { "model": "wbthings:block/classroom_chair", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "wbthings:block/classroom_chair", "y": 270, "uvlock": false }
+  }
+}
